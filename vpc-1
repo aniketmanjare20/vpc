@@ -59,13 +59,13 @@ go to vpc (mumbai)-----peering connections ----- create ------mumbai-to-singa --
 ----select region =singapore --- vpc id= (---go to singapore vpc ---your vpc ----copy vpc ID) paste  ---create
 go to singa ----go to peering connections ----selct it ---action---accept req---refresh --status-active
 
-go to route table (singa) ---singa-public-rt ----routes -----edit --add route ---10.0.1.0/16---peering connections ----select the next 
+go to route table (singa) ---singa-public-rt ----routes -----edit --add route ---10.0.0.0/16---peering connections ----select the next 
 cell whhatever comes ===save
 
 go to route table (singa) ---singa-private-rt ----routes -----edit --add route ---10.0.0.0/16---peering connections ----select the next 
 cell whhatever comes ===save
 
-go to route table (mumbai) ---singa-private-rt ----routes -----edit --add route ---10.0.0.0/16---peering connections ----select the next 
+go to route table (mumbai) ---private-rt ----routes -----edit --add route ---10.0.0.0/16---peering connections ----select the next 
 cell whhatever comes ===save
 
 go to mumbai(route tables)---public-rt ---edit rooute --add route ---20.0.0.0/16 ---peering conn ----select cell with whatever comes
